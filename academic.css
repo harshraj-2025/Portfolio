@@ -1,0 +1,120 @@
+/* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background: #403CBD;
+            color: #FFF;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Layout */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            height: 60px;
+            background-color: rgb(64, 60, 189);
+        }
+
+        nav .left {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 27px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 0, 0);
+            font-size: 1.02rem;
+        }
+
+        /* Responsive wrapper */
+        .section {
+            max-width: 90%;
+            margin: 2rem auto;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section3 h2 {
+            color: #FFB6C8;
+            font-size: 2rem;
+        }
+
+        /* Academic timeline cards */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .vertical {
+            flex: 1 1 calc(33% - 1rem);
+            background: #6249A8;
+            padding: 1rem;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .vertical img {
+            width: 40px;
+            margin-bottom: .5rem;
+        }
+
+        /* List styling */
+        .section3 ul {
+            list-style: disc inside;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Font sizes */
+        body {
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .vertical {
+                flex: 1 1 100%;
+            }
+            nav{
+                flex-direction: column;
+            }
+
+            .section h2,
+            .section3 h2 {
+                font-size: 1.5rem;
+            }
+        }
